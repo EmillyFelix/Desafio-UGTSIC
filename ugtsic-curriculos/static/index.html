@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envio de Currículo – UGTSIC</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <!-- Faixa superior-->
+  <header class="header">
+    <div class="wrap">
+      <h1>Cadastro e Envio de Currículo</h1>
+      <p>UGTSIC • Corporate</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="cvForm" class="card" enctype="multipart/form-data" novalidate>
+      <div class="section-title">Dados da Inscrição</div>
+      <div class="body">
+        <div class="form-grid">
+          <label>
+            Nome*
+            <input type="text" name="nome" required maxlength="120" placeholder="Seu nome completo" />
+          </label>
+          <label>
+            E-mail*
+            <input type="email" name="email" required maxlength="160" placeholder="voce@exemplo.com" />
+          </label>
+          <label>
+            Telefone*
+            <input type="tel" name="telefone" required maxlength="30" placeholder="(84) 9 9999-9999" />
+          </label>
+          <label>
+            Cargo Desejado*
+            <input type="text" name="cargo" required maxlength="120" placeholder="Ex.: Analista" />
+          </label>
+          <label>
+            Escolaridade*
+            <select name="escolaridade" required>
+              <option value="">Selecione...</option>
+              <option>Fundamental</option>
+              <option>Médio</option>
+              <option>Técnico</option>
+              <option>Superior</option>
+              <option>Pós-graduação</option>
+              <option>Mestrado</option>
+              <option>Doutorado</option>
+            </select>
+          </label>
+          <label style="grid-column: 1 / -1;">
+            Observações (opcional)
+            <textarea name="observacoes" rows="3" maxlength="1000" placeholder="Informações adicionais..."></textarea>
+          </label>
+          <label style="grid-column: 1 / -1;">
+            Arquivo do Currículo* (.pdf, .doc, .docx; máx 1MB)
+            <input type="file" name="arquivo" id="arquivo" accept=".pdf,.doc,.docx" required />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Enviar</button>
+          <span id="status" role="status" aria-live="polite"></span>
+        </div>
+        <p class="note">Campos marcados com * são obrigatórios.</p>
+        <div class="footer-bar"></div>
+      </div>
+    </form>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

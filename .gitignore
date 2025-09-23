@@ -1,0 +1,28 @@
+# Ambiente virtual Python
+.venv/
+env/
+venv/
+
+# Arquivos compilados Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Banco de dados local
+curriculos.db
+
+# Arquivos de configuração sensíveis
+.env
+
+# Pasta de uploads (currículos enviados)
+uploads/
+
+# Logs
+*.log
+
+# Cache e outros temporários
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db

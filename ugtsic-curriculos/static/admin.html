@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel – Candidaturas</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <style>
+    .toolbar { display:flex; gap:10px; align-items:center; margin: 18px 0; }
+    .table { width:100%; border-collapse: collapse; background:#fff; border:1px solid var(--border); }
+    .table th, .table td { padding:10px; border-bottom:1px solid var(--border); text-align:left; font-size:14px; }
+    .table th { background:#f3f4f6; font-weight:800; }
+    .pill { font-size:12px; font-weight:700; padding:4px 8px; border-radius:999px; background:#eef2ff; }
+    .nowrap { white-space: nowrap; }
+    .muted { color: var(--muted); }
+    .link { color: var(--blue-600); text-decoration: none; font-weight:700; }
+    .link:hover { text-decoration: underline; }
+    .search { max-width:320px; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <h1>Painel de Candidaturas</h1>
+      <p>UGTSIC • Admin</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div class="section-title">Candidaturas</div>
+      <div class="body">
+        <div class="toolbar">
+          <input id="token" class="search" type="password" placeholder="Cole o ADMIN_TOKEN aqui"/>
+          <button id="btnCarregar">Carregar</button>
+          <span id="status" class="muted"></span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table" id="tabela">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>Cargo</th>
+              <th>Escolaridade</th>
+              <th>Enviado em</th>
+              <th class="nowrap">Arquivo</th>
+              <th>IP</th>
+            </tr>
+            </thead>
+            <tbody id="linhas">
+              <tr><td colspan="9" class="muted">Carregue usando o token…</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="/static/admin.js"></script>
+</body>
+</html>
