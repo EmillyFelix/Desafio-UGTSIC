@@ -48,7 +48,7 @@ Rotas:
 - GET /api/candidaturas?token=SEU_TOKEN → lista registros (JSON)
 - GET /api/download/<id>?token=SEU_TOKEN → baixa o arquivo do currículo
 
-### 🔐 Segurança
+## 🔐 Segurança
 
 - Não versionar .env, uploads/ e curriculos.db.
 - Use .env.example como molde e mantenha o .env só localmente.
