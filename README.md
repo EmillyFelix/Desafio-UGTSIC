@@ -58,7 +58,7 @@ Rotas:
    - git rm -r --cached uploads/
    - git rm --cached curriculos.db
 
-###📧 SMTP (Gmail)
+## 📧 SMTP (Gmail)
 
 - SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587 (STARTTLS).
 - SMTP_USER = seu Gmail completo (ex.: seudominio@gmail.com).
