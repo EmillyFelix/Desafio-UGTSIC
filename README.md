@@ -7,16 +7,19 @@ Sistema simples de cadastro e envio de currículos.
 - Uploads: arquivos salvos em `uploads/`
 
 ## 💻 Como rodar no Windows
-1. **Entrar na pasta do projeto**
+1. **Entrar na pasta do projeto**:
+   
    cd ugtsic-curriculos
 
-2. **Criar e ativar o ambiente virtual**
+3. **Criar e ativar o ambiente virtual**:
+   
     python -m venv .venv
 
-3. **Instalar dependências**
+4. **Instalar dependências**:
+   
     pip install -r requirements.txt
 
-4. **Criar o .env a partir do exemplo e configurar**
+5. **Criar o .env a partir do exemplo e configurar**
     copy .env.example .env
 
     Edite o arquivo .env e defina:
@@ -27,10 +30,10 @@ Sistema simples de cadastro e envio de currículos.
 
         Se não quiser enviar e-mail agora, deixe SMTP_USER e SMTP_PASS vazios. O sistema salva no banco e registra um aviso.
 
-5. **Subir a aplicação**
+6. **Subir a aplicação**
      python app.py
 
-6. **Acessar**
+7. **Acessar**
 
     Formulário público: http://localhost:5000/
 
