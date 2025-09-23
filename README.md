@@ -6,7 +6,7 @@ Sistema simples de cadastro e envio de currículos.
 - Banco: SQLite (`curriculos.db`)  
 - Uploads: arquivos salvos em `uploads/`
 
-## 🚀 Como rodar no Windows
+## 💻 Como rodar no Windows
 1. **Entrar na pasta do projeto**
    cd ugtsic-curriculos
 
@@ -40,7 +40,7 @@ Sistema simples de cadastro e envio de currículos.
 
     Download de currículo (exemplo id=1): http://localhost:5000/api/download/1?token=SEU_TOKEN
 
-## Painel Admin
+## ⚙️ Painel Admin
 
 O painel /admin consome as rotas /api/*, que exigem o token ADMIN_TOKEN do .env.
 
@@ -48,7 +48,7 @@ Rotas:
 - GET /api/candidaturas?token=SEU_TOKEN → lista registros (JSON)
 - GET /api/download/<id>?token=SEU_TOKEN → baixa o arquivo do currículo
 
-### Segurança
+### 🔐 Segurança
 
 - Não versionar .env, uploads/ e curriculos.db.
 - Use .env.example como molde e mantenha o .env só localmente.
@@ -58,7 +58,7 @@ Rotas:
     git rm -r --cached uploads/
     git rm --cached curriculos.db
 
-### SMTP (Gmail)
+###📧 SMTP (Gmail)
 
 SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587 (STARTTLS).
 SMTP_USER = seu Gmail completo (ex.: seudominio@gmail.com).
