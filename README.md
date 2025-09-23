@@ -60,7 +60,7 @@ Rotas:
 
 ###📧 SMTP (Gmail)
 
-SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587 (STARTTLS).
-SMTP_USER = seu Gmail completo (ex.: seudominio@gmail.com).
-SMTP_PASS = Senha de App do Google (não é a senha normal).
-Ative 2FA na conta Google → “Senhas de app” → gere a senha (16 caracteres) → use no .env.
+- SMTP_SERVER=smtp.gmail.com, SMTP_PORT=587 (STARTTLS).
+- SMTP_USER = seu Gmail completo (ex.: seudominio@gmail.com).
+- SMTP_PASS = Senha de App do Google (não é a senha normal).
+- Ative 2FA na conta Google → “Senhas de app” → gere a senha (16 caracteres) → use no .env.
