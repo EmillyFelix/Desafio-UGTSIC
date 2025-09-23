@@ -6,7 +6,7 @@ Sistema simples de cadastro e envio de currículos.
 - Banco: SQLite (`curriculos.db`)  
 - Uploads: arquivos salvos em `uploads/`
 
-## 💻 Como rodar no Windows
+## 💻 Como rodar
 1. **Entrar na pasta do projeto**:
    
    cd ugtsic-curriculos
