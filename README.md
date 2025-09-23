@@ -54,9 +54,9 @@ Rotas:
 - Use .env.example como molde e mantenha o .env só localmente.
 - Se por engano já tiver adicionado algum desses ao git, remova do índice:
 
-    git rm --cached .env
-    git rm -r --cached uploads/
-    git rm --cached curriculos.db
+   - git rm --cached .env
+   - git rm -r --cached uploads/
+   - git rm --cached curriculos.db
 
 ###📧 SMTP (Gmail)
 
